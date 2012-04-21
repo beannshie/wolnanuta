@@ -1,0 +1,78 @@
+#tmcAdministrationPlugin#
+
+A new theme for the administration backend, includes a module for a dashboard making use of the sfAdminDashPlugin.
+
+## Installation ##
+
+  * Install the plugin
+
+        php symfony plugin:install tmcAdministrationPlugin
+  
+  * This plugin depends on tmcDoctrineGuardPlugin. Install it and configure it.
+
+  * (Optional) Copy the sfGuard* modules from the plugin folder to your application module directory so they assume the same layout as the administration area.
+
+  * Activate the plugin in the `config/ProjectConfiguration.class.php` in case it isn't already active
+
+        [php]
+        class ProjectConfiguration extends sfProjectConfiguration
+        {
+          public function setup()
+          {
+            $this->enablePlugins(array(
+              'sfDoctrineGuardPlugin',
+              'tmcAdministrationPlugin',
+              '...'
+            ));
+          }
+        }
+
+  * Enable the module dashboard_admin in your `settings.yml` (optional)
+
+        all:
+          .settings:
+             enabled_modules:      [default, dashboard_admin, ...]
+
+  * (Optional) If you activated the dashboar module, use it as your homepage, in routing.yml
+    
+        homepage:
+          url: /
+            params: { module: dashboard_admin, action: dashboard }
+
+  * Create a new administration module using the theme tmc for your model classes
+   
+        php symfony doctrine:generate-admin --theme=tmc backend ModelClass      
+
+  * Publish the assests so a link for the plugin web directory is created
+
+        php symfony plugin:publish-assets
+
+  * Clear you cache
+
+        php symfony cc
+
+## Comments ##
+
+  * This plugin also offers modules for the sfDoctrineGuardPlugin, copy the modules folders to your app to activate.
+
+  * All the modules are secure by default.
+
+  * jQuery and jQuery UI libraries are included. Change date widgets to input text boxes to automatically make use of the calendar widget.
+
+  * Several partials are used to render elements that change from one project to another, like menus, logos, links. Replicate the files to you application and change them.
+
+  * All the configurations used are set in the app.yml, copy them to your application app.yml file and redefine them.
+
+  * There is a css file called blue.css that contains all the definitions related to color, created a new one and set it on the app.yml configuration file to change the appearence of the layout.
+
+  * Take a look of an example on [http://tmcadministrationplugin.titomiguelcosta.com/](http://tmcadministrationplugin.titomiguelcosta.com) using admin for the username and passord.
+
+## ToDo ##
+
+  * Optimize css and javascript
+
+  * Create new color variations
+
+## Contact ##
+
+  * Share your opinion and give feedback at symfony@titomiguelcosta.com

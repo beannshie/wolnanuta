@@ -1,0 +1,21 @@
+.cpanel
+{
+  padding: 7px 10px 0;
+}
+.cpanel .icon
+{
+  float: left;
+  background-color: #d6d6d6;
+  padding: 10px 15px;
+  margin: 0 4px 0 0;
+}
+.cpanel .icon span
+{
+  display: block;
+  text-align: center;
+}
+.cpanel .icon a
+{
+  display: block;
+  text-align: center;
+}

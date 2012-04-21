@@ -1,0 +1,496 @@
+html, body
+{
+  background-color: #b2b2b2;
+  font-family: Tahoma, sans-serif;
+  color: #888;
+  margin: 5px 0;
+}
+#sf_admin_container a
+{
+  color: #a0a0a0;
+  text-decoration: none;
+}
+#sf_admin_container a:hover
+{
+  color: #666;
+}
+#sf_admin_container th
+{
+  font-size: 14px;
+  white-space: nowrap;
+}
+#sf_admin_container td, #sf_admin_container th
+{
+  border: 0;
+  text-align: left;
+  vertical-align: top;
+}
+#sf_admin_container ul.sf_admin_td_actions li
+{
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+#sf_admin_container ul.sf_admin_actions
+{
+  margin: 5px 0 10px;
+  list-style-type: none;
+  float: left;
+}
+#sf_admin_container ul.sf_admin_actions .sf_admin_batch_actions_choice
+{
+  background-color: transparent;
+  margin: 0 2px;
+  padding: 0;
+}
+#sf_admin_container ul.sf_admin_actions .sf_admin_batch_actions_choice .button
+{
+  height: auto;
+  padding: 1px 5px 3px;
+  min-width: 20px;
+  margin: 0;
+  border-width: 2px;
+}
+
+#sf_admin_container ul.sf_admin_actions li
+{
+  list-style-type: none;
+  display: inline;
+  background-color: #ddd;
+  padding: 5px 10px;
+  margin: 0 0 0 5px;
+}
+
+#sf_admin_container ul.sf_admin_actions li a,
+#sf_admin_container ul.sf_admin_td_actions li a
+{
+  padding-left: 20px;
+  background: url(../images/default.png) no-repeat 0 0;
+}
+#sf_admin_container ul li.sf_admin_action_new
+{
+  position: relative;
+  left: 4px;
+}
+#sf_admin_container ul li.sf_admin_action_show a
+{
+  background: url(../images/show.png) no-repeat 0 0;
+}
+#sf_admin_container ul li.sf_admin_action_new a
+{
+  background: url(../images/new.png) no-repeat 0 0;
+}
+
+#sf_admin_container ul li.sf_admin_action_delete a
+{
+  background: url(../images/delete.png) no-repeat 0 0;
+}
+
+#sf_admin_container ul li.sf_admin_action_list a
+{
+  background: url(../images/list.png) no-repeat 0 0;
+}
+
+#sf_admin_container ul li.sf_admin_action_edit a
+{
+  background: url(../images/edit.png) no-repeat 0 0;
+}
+
+#sf_admin_container ul li.sf_admin_action_search a
+{
+  background: url(../images/search.png) no-repeat 0 0;
+}
+
+#sf_admin_container .radio_list, #sf_admin_container .checkbox_list
+{
+  margin: 0;
+}
+
+#sf_admin_container .radio_list li, #sf_admin_container .checkbox_list li
+{
+  list-style: none;
+  display: inline;
+}
+.sf_admin_pagination, #sf_admin_container .max_per_page
+{
+  float: right;
+}
+#sf_admin_container .max_per_page
+{
+  margin: 5px 5px 10px;
+}
+.sf_admin_pagination .active
+{
+  background-color: #ddd;
+  padding: 1px 5px;
+}
+#sf_admin_container fieldset h2
+{
+  padding: 5px;
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+}
+
+#sf_admin_container fieldset
+{
+  margin-bottom: 3px;
+  background-color: #d3d3d3;
+  padding: 8px;
+}
+.sf_admin_form .sf_admin_form_row
+{
+  background-color: #d6d6d6;
+  margin-bottom: 2px;
+  padding: 4px 5px 2px;
+  min-height: 23px;
+}
+.sf_admin_form .sf_admin_form_row label
+{
+  width: 160px !important;
+  display: block;
+  float: left;
+  padding: 5px 0 0;
+}
+.sf_admin_form .sf_admin_form_row label + table
+{
+  clear: both;
+}
+.sf_admin_form .sf_admin_form_row label + table th
+{
+  width: 175px !important;
+  font-size: 12px !important;
+}
+.sf_admin_form .sf_admin_form_row label + table label
+{
+  max-width: 165px !important;
+}
+.sf_admin_form .sf_admin_form_row.sf_admin_form_field_pt div > label,
+.sf_admin_form .sf_admin_form_row.sf_admin_form_field_en div > label,
+.sf_admin_form .sf_admin_form_row.sf_admin_form_field_fr div > label,
+.sf_admin_form .sf_admin_form_row.sf_admin_form_field_es div > label,
+.sf_admin_form .sf_admin_form_row.sf_admin_form_field_it div > label,
+.sf_admin_form .sf_admin_form_row.sf_admin_form_field_de div > label
+{
+  font-size: 14px !important;
+  color: #666;
+}
+.sf_admin_form .sf_admin_form_row label + table th label
+{
+  width: auto;
+}
+.sf_admin_form .sf_admin_form_row .help
+{
+  margin: -10px 0 -7px 160px;
+  padding: 0 0 15px 20px;
+  color: #999;
+  background: transparent url('../images/help.png') no-repeat 0 50%;
+}
+.sf_admin_form .sf_admin_form_row .ajuda
+{
+  padding: 0 0 0 20px;
+  background: transparent url('../images/help.png') no-repeat 0 50%;
+}
+.tmc_choice_add
+{
+  cursor: pointer;
+}
+#sf_admin_page
+{
+  width: 974px;
+  margin: 0 auto;
+  text-align: center;
+}
+#sf_admin_header
+{
+  height: 50px;
+  line-height: 40px;
+  margin: 0;
+  background: transparent url('../images/sf_admin/header_bg.png') bottom left no-repeat;
+}
+#title
+{
+  text-align: left;
+  font-size: 18px;
+  float: left;
+  margin: 0 0 0 30px;
+  color: #666;
+}
+  #title .administration
+  {
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left-width: 2px;
+    border-left-style: solid;
+  }
+  #title .user
+  {
+    font-size: 14px;
+  }
+h1
+{
+  height: 46px;
+  background: transparent url('../images/sf_admin/title_bg.png') top left no-repeat;
+  font-size: 18px;
+  text-indent: 25px;
+  line-height: 44px;
+  margin: 0 0 8px 0;
+}
+#submenu
+{
+  float: right;
+  margin: 7px 20px 0 0;
+}
+#submenu li
+{
+  float: left;
+  margin: 0 3px 0 2px;
+}
+#sf_admin_container
+{
+  background: #d6d6d6 url('../images/sf_admin/content_bg.png') top left repeat-y;
+  text-align: left;
+  margin: 0;
+  padding: 8px 0 0;
+}
+#sf_admin_content
+{
+  margin: 0 30px;
+  padding: 0 0 6px;
+}
+#sf_admin_bar
+{
+  display: none;
+  text-align: left;
+  background-color: #d6d6d6;
+}
+#sf_admin_bar table, #sf_admin_content table
+{
+  width: 100% !important;
+}
+#sf_admin_content table #sf_admin_list_batch_actions {
+  width: 14px;
+}
+#sf_admin_container td, #sf_admin_container th
+{
+  padding: 5px;
+  border: 3px solid #d6d6d6;
+}
+#sf_admin_container th img
+{
+  position: relative;
+  top: 3px;
+}
+#sf_admin_container tbody .odd
+{
+  background-color: #c9c9c9;
+}
+#sf_admin_container tbody .even
+{
+  background-color: #c0c0c0;
+}
+#sf_admin_footer
+{
+  background: #d6d6d6 url('../images/sf_admin/footer_bg.png') bottom left no-repeat;
+  height: 46px;
+  line-height: 46px;
+  color: #9a9a9a;
+  text-align: right;
+  padding-right: 40px;
+}
+.clear
+{
+  clear: both;
+}
+*
+{
+  outline: none !important;
+}
+#sf_admin_footer a:link, #sf_admin_footer a:visited
+{
+  color: #808080;
+  text-decoration: none;
+  padding: 0 0 2px 0;
+}
+#sf_admin_footer a:hover, #sf_admin_footer a:active
+{
+  color: #666;
+  border-bottom: 1px solid #888;
+}
+.close
+{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.error
+{
+  background-image: url('../images/error2.png');
+  border-left: 10px solid #e8d1d1;
+  padding: 8px 10px 10px 30px;
+  background-color: #e8d1d1;
+  background-position: center left;
+  background-repeat: no-repeat;
+  width: auto;
+  margin: 3px 30px;
+  color: #ea8c8c;
+}
+.notice
+{
+  background-image: url('../images/alert.png');
+  border-left: 10px solid #fdf7e0;
+  padding: 8px 10px 10px 30px;
+  background-color: #fdf7e0;
+  color: #e8c63c;
+  background-position: center left;
+  background-repeat: no-repeat;
+  width: auto;
+  margin: 3px 30px;
+}
+#sf_admin_show
+{
+  margin: 0 30px 10px;
+  background-color: #d3d3d3;
+  padding: 5px;
+}
+#sf_admin_show table
+{
+  width: 100%;
+}
+#sf_admin_show td
+{
+  background-color: #d6d6d6;
+}
+#sf_admin_show td, #sf_admin_show th
+{
+  border: 2px solid #d3d3d3;
+}
+#sf_admin_show .sf_admin_actions
+{
+  margin: 10px 0 !important;
+}
+#form
+{
+  text-align: left;
+}
+  #form label
+  {
+    display: block;
+    color: #1f97c3;
+    text-indent: 15px;
+    font-size: 14px;
+  }
+  #form table label
+  {
+    text-indent: 0px;
+    width: 115px;
+  }
+  #form table
+  {
+    width: 100% !important;
+  }
+  .error_list
+  {
+    margin: 3px auto;
+    padding: 8px 10px 10px;
+    background-color: #e8d1d1;
+    color: #ea8c8c;
+    width: auto;
+  }
+  .notice_list
+  {
+    margin: 3px auto;
+    padding: 8px 10px 10px;
+    background-color: #fdf7e0;
+    color: #e8c63c;
+    width: auto;
+  }
+  table .error_list
+  {
+    display: none;
+  }
+  .textbox, tbody input[type=text], .sf_admin_form .sf_admin_form_row.sf_admin_text input[type=text]
+  {
+    border: 2px solid #ddd;
+    width: 371px;
+    height: 22px;
+    font-size: 13px;
+    background-color: #f6f6f6;
+    color: #777;
+    margin: 3px 0 0;
+  }
+  .sf_admin_form .sf_admin_form_row.sf_admin_text input
+  {
+    margin: 0;
+  }
+  .textbox:focus, .sf_admin_date input:focus, tbody input[type=text]:focus, .sf_admin_form .sf_admin_form_row.sf_admin_text input[type=text]:focus
+  {
+    border: 2px solid #c0daec !important;
+    background-color: #f9f9f9;
+  }
+  .sf_admin_date input
+  {
+    border: 2px solid #ddd;
+    background-color: #f6f6f6;
+    height: 22px;
+    font-size: 13px;
+    color: #777;
+  }
+  .row
+  {
+    margin: 12px 0 7px;
+  }
+  #form table td
+  {
+    padding: 2px 0 0;
+  }
+  .row.submit, tfoot tr
+  {
+    text-align: right;
+  }
+  .row.submit input, .button
+  {
+    border: 2px solid #c9c9c9;
+    background: #4ca7cf url('../images/sf_guard/submit_bg.png') top left repeat-x;
+    min-width: 50px;
+    padding: 2px 15px 4px;
+    height: 30px;
+    color: #ddd !important;
+    text-decoration: none;
+    font-size: 14px !important;
+    margin: 4px 0 0;
+  }
+  input.go {
+    position: relative;
+    top: 4px;
+  }
+#sf_admin_bar
+{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#sf_admin_bar td, #sf_admin_bar th
+{
+  background-color: #d3d3d3;
+  border: 2px solid #d6d6d6;
+  padding: 2px 10px 4px;
+}
+#sf_admin_bar th
+{
+  background-color: #d0d0d0;
+  color: #555;
+}
+#sf_admin_bar tfoot td
+{
+  background-color: #d0d0d0;
+}
+#photos
+{
+  margin: 5px 0;
+}
+#photos img
+{
+  padding: 5px;
+}

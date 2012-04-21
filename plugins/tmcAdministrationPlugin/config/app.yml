@@ -1,0 +1,43 @@
+all:
+  tmcAdministrationPlugin:
+    header_title:       Tito Miguel Costa
+    footer_name:        titomiguelcosta
+    footer_url:         http://www.titomiguelcosta.com/
+    theme:              blue
+
+  sfGuardPlugin:
+    header_title:       Tito Miguel Costa
+    footer_name:        titomiguelcosta
+    footer_url:         http://www.titomiguelcosta.com/
+    login_logo_src:     /tmcAdministrationPlugin/images/sf_guard/logo.png
+    login_logo_size:    252x167
+    login_logo_title:   Tito Miguel Costa
+    login_show_title:   true
+    secure_links:       true
+    signin_links:       true
+    register_links:     true
+    forgot_password_links: true
+
+  sf_admin_dash:
+    web_dir:                      /tmcAdministrationPlugin
+    image_dir:                    /tmcAdministrationPlugin/images/dashboard/
+    default_image:                config.png
+    resize_mode:                  thumbnail
+    logout:                       true
+    site:                         Tito Miguel Costa
+    include_path:                 true
+    include_jquery_no_conflict:   false
+    login_route:                  '@sf_guard_signin'
+    logout_route:                 '@sf_guard_signout'
+
+    categories:
+      Blog:
+        items:
+          Articles:
+            url:          homepage
+            image:        support.png
+            credentials:  [admin]
+          Comments:
+            url:          homepage
+            image:        menu.png
+            credentials:  [admin]

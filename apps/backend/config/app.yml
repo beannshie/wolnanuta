@@ -2,4 +2,59 @@
 # http://www.symfony-project.org/reference/1_4/en/11-App
 
 # default values
-#all:
+all:
+####tmcAdministrationPlugin
+  tmcAdministrationPlugin:
+    header_title:       Wolna Nuta
+    footer_name:        inps
+    footer_url:         http://www.inps.pl/
+    theme:              blue
+
+  sfGuardPlugin:
+    header_title:       Wolna Nuta
+    footer_name:        inps
+    footer_url:         http://www.inps.pl/
+    login_logo_src:     /tmcAdministrationPlugin/images/sf_guard/logo.png
+    login_logo_size:    252x167
+    login_logo_title:   ''
+    login_show_title:   true
+    secure_links:       true
+    signin_links:       true
+    register_links:     true
+    forgot_password_links: true
+
+  sf_admin_dash:
+    web_dir:                      /tmcAdministrationPlugin
+    image_dir:                    /tmcAdministrationPlugin/images/dashboard/
+    default_image:                config.png
+    resize_mode:                  thumbnail
+    logout:                       true
+    site:                         Wolna Nuta
+    include_path:                 true
+    include_jquery_no_conflict:   false
+    login_route:                  '@sf_guard_signin'
+    logout_route:                 '@sf_guard_signout'
+
+    categories:
+      Blog:
+        items:
+          Articles:
+            url:          homepage
+            image:        support.png
+            credentials:  [administrator]
+          Comments:
+            url:          homepage
+            image:        menu.png
+            credentials:  [administrator]
+      Blog2:
+        items:
+          Articles:
+            url:          homepage
+            image:        support.png
+            credentials:  [administrator]
+          Comments:
+            url:          homepage
+            image:        menu.png
+            credentials:  [administrator]
+
+####tmcAdministrationPlugin

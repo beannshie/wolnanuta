@@ -1,0 +1,1 @@
+[?php include_partial('<?php echo $this->getModuleName() ?>/header', array('pager' => $pager)) ?]

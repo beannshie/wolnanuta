@@ -1,0 +1,81 @@
+#title .administration
+{
+  color: #1391cc;
+  border-left-color: #8cb9d3;
+}
+#sf_admin_container thead th, #sf_admin_show th
+{
+  background-color: #d0d0d0;
+  color: #59a3cd !important;
+}
+#title .user
+{
+  color: #777;
+}
+#sf_admin_container thead a:link, #sf_admin_container thead a:visited
+{
+  color: #1391cc;
+}
+#sf_admin_container thead a:hover, #sf_admin_container thead a:active
+{
+  color: #555;
+}
+#sf_admin_menu .dropdown li > a:hover, #sf_admin_menu .dropdown li > a:active
+{
+  color: #59a3cd;
+  background-color: transparent;
+}
+.hover
+{
+  background-color: #b2b2b2 !important;
+  color: #59a3cd !important;
+}
+#sf_admin_container tfoot th
+{
+  background-color: #d0d0d0;
+}
+#sf_admin_container tr:hover, #sf_admin_container tr.active
+{
+  background-color: #d5dbdd !important;
+}
+#sf_admin_bar th
+{
+  color: #1391cc;
+}
+.sf_admin_pagination .active
+{
+  color: #469F49;
+}
+#sf_admin_container h1
+{
+  color: #666;
+}
+
+/* sf_guard section */
+h1 .administration
+{
+  color: #1391cc;
+  border-right: 2px solid #8cb9d3;
+}
+.textbox:focus, tbody input:focus
+{
+  border: 3px solid #c0daec !important;
+}
+.row.submit input, .button
+{
+  background: #4ca7cf url('../images/sf_guard/submit_bg.png') top left repeat-x;
+}
+.error_list
+{
+  background: #e8d1d1 url('../images/sf_guard/error_bg.png') bottom left repeat-x;
+  color: #ea8c8c;
+}
+.notice_list
+{
+  background: #fdf7e0 url('../images/sf_guard/notice_bg.png') bottom left repeat-x;
+  color: #e8c63c;
+}
+#sf_admin_container fieldset h2
+{
+  background-color: #8cb9d3;
+}

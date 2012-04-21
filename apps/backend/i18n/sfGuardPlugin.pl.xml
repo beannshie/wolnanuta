@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <header />
+    <body>
+      <!-- Geral -->
+      <!--<trans-unit id="1">
+        <source>Required.</source>
+        <target>Campo obrigatório.</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Invalid.</source>
+        <target>Campo inválido.</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>"%value%" is not an integer.</source>
+        <target>Campo inválido. "%value%" não é um número inteiro.</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>is empty</source>
+        <target>é nulo?</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>from</source>
+        <target>de</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>to</source>
+        <target>até</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Created at</source>
+        <target>Data de criação</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Updated at</source>
+        <target>Data da última actulização</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>developed by</source>
+        <target>desenvolvido por</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Signin</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Forgot your password?</source>
+        <target>Recuperar senha</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Want to register?</source>
+        <target>Efectuar registo</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>No credentials</source>
+        <target>Sem credenciais</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Oops! The page you asked for is secure and you do not have proper credentials.</source>
+        <target>Lamentamos, mas não possui credenciais suficientes para visualizar a página solicitada.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Homepage</source>
+        <target>Página inicial</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Previous page</source>
+        <target>Página anterior</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Logout</source>
+        <target>Terminar sessão</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>password</source>
+        <target>Senha</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Register</source>
+        <target>Registar</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Below you will have your username and new password</source>
+        <target>De seguida a referência ao seu utilizador e senha</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Hi %first_name%</source>
+        <target>Olá %first_name%</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>This e-mail is being sent because you requested information on how to reset your password.</source>
+        <target>Este e-mail foi enviado porque foi solicitada informação para redefinir a sua senha.</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>You can change your password by clicking the below link which is only valid for 24 hours.</source>
+        <target>Poderá alterar a sua senha clicando no endereço em baixo, o qual estará activo apenas nas próximas 24 horas.</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Click to change password</source>
+        <target>Clicar para alterar a senha</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Enter your new password in the form below.</source>
+        <target>Indique a sua nova senha no formulário em baixo.</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Do not worry, we can help you get back in to your account safely!</source>
+        <target>Não se preocupe, é possível redefinir a sua senha.</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Fill out the form below to request an e-mail with information on how to reset your password.</source>
+        <target>Preencha o formulário para solicitar a redefinição da sua senha.</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Administration area</source>
+        <target>Área de administração</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Username or E-Mail</source>
+        <target>Utilizador ou e-mail</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Password</source>
+        <target>Senha</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Remember</source>
+        <target>Recordar</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Required. The username and/or password is invalid.</source>
+        <target>Obrigatório. Credenciais inválidas.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>The username and/or password is invalid.</source>
+        <target>Credenciais inválidas.</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Invalid e-mail address!</source>
+        <target>Endereço de e-mail inválido.</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Email address</source>
+        <target>E-mail</target>
+      </trans-unit>-->
+      <trans-unit id="36">
+        <source></source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Administration area</source>
+        <target>Panel Administratora</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

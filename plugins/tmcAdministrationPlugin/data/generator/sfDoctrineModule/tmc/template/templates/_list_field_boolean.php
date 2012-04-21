@@ -1,0 +1,5 @@
+[?php if ($value): ?]
+  [?php echo image_tag(sfConfig::get('sf_admin_module_web_dir').'/images/tick.png', array('alt' => __('Checked', array(), 'tmcAdministrationPlugin'), 'title' => __('Checked', array(), 'tmcAdministrationPlugin'))) ?]
+[?php else: ?]
+  [?php echo image_tag(sfConfig::get('sf_admin_module_web_dir').'/images/notick.png', array('alt' => __('Unchecked', array(), 'tmcAdministrationPlugin'), 'title' => __('Unchecked', array(), 'tmcAdministrationPlugin'))) ?]
+[?php endif; ?]
