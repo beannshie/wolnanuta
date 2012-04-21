@@ -33,3 +33,16 @@ all:
 
     # Enable the database manager
     use_database:           true
+
+    enabled_modules:      [default, sfGuardAuth, sfGuardGroup, sfGuardUser, sfGuardPermission]
+
+    #sfGuard
+    login_module:           sfGuardAuth
+    login_action:           signin
+
+    secure_module:          sfGuardAuth
+    secure_action:          secure
+
+    charset: utf-8
+    i18n: true
+    default_culture: pl_PL

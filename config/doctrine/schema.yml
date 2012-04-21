@@ -1,0 +1,11 @@
+###########################################
+#NEWSLETTER
+
+#for spool strategy
+MailMessage:
+ actAs: { Timestampable: ~ }
+ columns:
+   message: { type: clob, notnull: true }
+
+#END NEWSLETTER
+###########################################

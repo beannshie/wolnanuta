@@ -2,3 +2,7 @@
 /log/*
 /config/databases.yml
 /web/uploads/*
+/.idea
+/apps/frontend/config/factories.yml
+/apps/backend/config/factories.yml
+/apps/frontend/config/app.yml

@@ -1,0 +1,27 @@
+sfGuardUser:
+  User_admin:
+    first_name:     Zaklina
+    last_name:      Data
+    email_address:  zaklina.data@inps.pl
+    username:       kaala
+    password:       nimda
+    is_super_admin: true
+    Groups:         [Group_admin]
+
+sfGuardGroup:
+  Group_admin:
+    name:           administrator
+    description:    Administrator group
+    Permissions:    [Permission_admin]
+  Group_user:
+    name:           user
+    description:    Site user group
+    Permissions:    [Permission_user]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           administrator
+    description:    Administrator permission
+  Permission_user:
+    name:           user
+    description:    Site user permission

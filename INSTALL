@@ -1,0 +1,35 @@
+w plikach app.yml oraz factories.yml ustawic odpowiednie dane(maile etc.):
+
+wprowadzic odpowiednie dane w config/databases.yml
+
+
+
+CRON:
+task do wysylania maili to 'symfony project:send-emails --message-limit=10 --time-limit=20'
+
+przyklad jaki ma sie znalezc w cronie:
+MAILTO="you@example.org"
+0 3 * * *       /usr/bin/php /var/www/yourproject/symfony project:send-emails
+
+aby co 1 min wysylac poczte z limitem 10 wiadomosci naraz lub max 20 sekund wysylania
+wykonac kolejno (bedac zalogowanym jako pozadany uzytkownik):
+$crontab -e (edycja pliku crontab)
+wkleic:
+*/1 * * * *  /usr/bin/php /home/<dalsza_czesc_sciezki>/symfony project:send-emails --message-limit=10 --time-limit=20 --env=prod --application=backend
+wcisnac kolejno ctrl+k+x (ctrl+x etc.)
+otrzymamy komunikat w stylu:
+File /tmp/crontab.dkQ9aW/crontab saved
+crontab: installing new crontab
+
+
+
+DBBACKUP
+w backend/config/app.yml
+  fcDbBackupPlugin:
+    path: /home/kaala/praca/uni/uniKomp/dbbackup/
+
+katalog dbbackup i prawa do tego katalogu na 777
+
+w crontab: (kazda godzina 50 min po - 50 * * * * )
+tu: o 23
+0 23 * * *  /usr/bin/php /home/kaala/praca/uni/uniKomp/symfony fc:dbBackup > /home/kaala/praca/uni/uniKomp/log/dbbackup.log --env=prod --application=backend
