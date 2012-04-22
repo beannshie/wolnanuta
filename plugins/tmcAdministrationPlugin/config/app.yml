@@ -31,13 +31,13 @@ all:
     logout_route:                 '@sf_guard_signout'
 
     categories:
-      Blog:
-        items:
-          Articles:
-            url:          homepage
-            image:        support.png
-            credentials:  [admin]
-          Comments:
-            url:          homepage
-            image:        menu.png
-            credentials:  [admin]
+#      Blog:
+#        items:
+#          Articles:
+#            url:          homepage
+#            image:        support.png
+#            credentials:  [admin]
+#          Comments:
+#            url:          homepage
+#            image:        menu.png
+#            credentials:  [admin]

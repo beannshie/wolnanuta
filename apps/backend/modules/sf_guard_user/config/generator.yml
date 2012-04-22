@@ -1,0 +1,53 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 tmc
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        password_again:
+          label: Powtórz hasło
+        password:
+          label: Hasło
+        username:
+          label: Login
+        created_at:
+          label: Utworzony
+        updated_at:
+          label: Aktualizowany
+        last_login:
+          label: Logował się
+        is_active:
+          label: Aktywny
+        groups_list:
+          label: Grupy
+        profile:
+          label: Imię i nazwisko
+      list:
+        title:   Lista użytkowników
+        display: [=username, email_address, profile, last_login, is_active, created_at, updated_at]
+      filter:
+        display: [username, email_address, last_login, is_active, created_at, updated_at]
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "NONE":                    [username, password, password_again, email_address]
+          "Profil":                  [profile]
+          "Grupy użytkownika":       [groups_list]
+          "Ustawienia zaawansowane": [is_active]
+      edit:
+        title: Edycja użytkownika "%%username%%"
+      new:
+        title: Dodaj użytkownika
+      show:
+        title: Dane użytkownika "%%username%%"
+        display: [username, email_address, profile, last_login, is_active, created_at, updated_at]

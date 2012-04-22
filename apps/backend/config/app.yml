@@ -8,15 +8,18 @@ all:
     header_title:       Wolna Nuta
     footer_name:        inps
     footer_url:         http://www.inps.pl/
-    theme:              blue
+    theme:              darkblue
+    theme_web_dir:      ''
+    logo_src:           /images/admin/logo.png
+    logo_size:          40x40
 
   sfGuardPlugin:
     header_title:       Wolna Nuta
     footer_name:        inps
     footer_url:         http://www.inps.pl/
-    login_logo_src:     /tmcAdministrationPlugin/images/sf_guard/logo.png
-    login_logo_size:    252x167
-    login_logo_title:   ''
+    login_logo_src:     /images/admin/logo.png
+    login_logo_size:    252x252
+    login_logo_title:   'Wolna Nuta'
     login_show_title:   true
     secure_links:       true
     signin_links:       true
@@ -36,19 +39,15 @@ all:
     logout_route:                 '@sf_guard_signout'
 
     categories:
-      Blog:
+      Administracja:
         items:
-          Articles:
-            url:          homepage
+          Użytkownicy:
+            url:          '@sf_guard_user'
             image:        support.png
             credentials:  [administrator]
-          Comments:
-            url:          homepage
-            image:        menu.png
-            credentials:  [administrator]
-      Blog2:
+      CMS:
         items:
-          Articles:
+          Strony:
             url:          homepage
             image:        support.png
             credentials:  [administrator]

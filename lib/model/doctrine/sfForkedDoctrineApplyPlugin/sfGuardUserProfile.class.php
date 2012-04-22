@@ -12,4 +12,15 @@
  */
 class sfGuardUserProfile extends PluginsfGuardUserProfile
 {
+    public function  __toString()
+    {
+        if( $this->getFirstname() !== null || $this->getLastname() !== null  )
+        {
+            return $this->getFullname();
+        }
+        else
+        {
+            return $this->getUser()->getUsername();
+        }
+    }
 }

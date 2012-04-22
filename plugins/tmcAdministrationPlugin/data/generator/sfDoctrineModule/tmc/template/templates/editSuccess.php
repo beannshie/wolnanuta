@@ -8,7 +8,11 @@
 
   <div id="sf_admin_container">
     <div id="sf_admin_menu">
-      [?php include_partial('<?php echo $this->getModuleName() ?>/menu') ?]
+      [?php
+        $items = sfAdminDash::getItems();
+        $categories = sfAdminDash::getCategories();
+      ?]
+      [?php include_partial('<?php echo $this->getModuleName() ?>/menu', array('items' => $items, 'categories' => $categories)) ?]
     </div>
     
     <h1>[?php echo <?php echo $this->getI18NString('edit.title') ?> ?]</h1>

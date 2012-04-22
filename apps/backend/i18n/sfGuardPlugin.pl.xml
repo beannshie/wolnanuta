@@ -4,6 +4,14 @@
   <file original="global" source-language="en" datatype="plaintext">
     <header />
     <body>
+        <trans-unit id="36">
+            <source></source>
+            <target></target>
+        </trans-unit>
+        <trans-unit id="37">
+            <source>Administration area</source>
+            <target>Panel Administratora</target>
+        </trans-unit>
       <!-- Geral -->
       <!--<trans-unit id="1">
         <source>Required.</source>
@@ -145,14 +153,6 @@
         <source>Email address</source>
         <target>E-mail</target>
       </trans-unit>-->
-      <trans-unit id="36">
-        <source></source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="37">
-        <source>Administration area</source>
-        <target>Panel Administratora</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>

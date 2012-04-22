@@ -1,0 +1,118 @@
+#title_logo, #title_name
+{
+    float: left;
+}
+
+
+
+
+/*dropdown*/
+#sf_admin_menu .dropdown li > a:link, #sf_admin_menu .dropdown li > a:visited
+{
+    color: #484848 !important;
+}
+
+#sf_admin_menu .node
+{
+    font-weight: bold;
+}
+
+/*body, admin*/
+html, body
+{
+    color: #666 !important;
+}
+#sf_admin_container a
+{
+    color: #333 !important;
+    text-decoration: none;
+}
+#sf_admin_container a:hover
+{
+    color: #333 !important;
+}
+
+
+/*blue*/
+#title .administration
+{
+    color: #0351cc !important;
+    border-left-color: #8cb9d3 !important;
+}
+#sf_admin_container thead th, #sf_admin_show th
+{
+    background-color: #d0d0d0 !important;
+    color: #0351cc !important;
+}
+#title .user
+{
+    color: #555 !important;
+}
+#sf_admin_container thead a:link, #sf_admin_container thead a:visited
+{
+    color: #0351cc !important;
+    font-weight: bold;
+}
+#sf_admin_container thead a:hover, #sf_admin_container thead a:active
+{
+    color: #555 !important;
+}
+#sf_admin_menu .dropdown li > a:hover, #sf_admin_menu .dropdown li > a:active
+{
+    color: #0351cc !important;
+    background-color: transparent;
+}
+.hover
+{
+    background-color: #525252;
+    color: #0351cc !important;
+}
+#sf_admin_container tfoot th
+{
+    background-color: #d0d0d0 !important;
+}
+#sf_admin_container tr:hover, #sf_admin_container tr.active
+{
+    background-color: #d5dbdd !important;
+}
+#sf_admin_bar th
+{
+    color: #0351cc !important;
+}
+.sf_admin_pagination .active
+{
+    color: #469F49 !important;
+}
+#sf_admin_container h1
+{
+    color: #555 !important;
+}
+
+/* sf_guard section */
+h1 .administration
+{
+    color: #0351cc !important;
+    border-right: 2px solid #8cb9d3 !important ;
+}
+.textbox:focus, tbody input:focus
+{
+    border: 3px solid #c0daec !important;
+}
+.row.submit input, .button
+{
+    background: #4ca7cf url('../images/sf_guard/submit_bg.png') top left repeat-x;
+}
+.error_list
+{
+    background: #e8d1d1 url('../images/sf_guard/error_bg.png') bottom left repeat-x;
+    color: #ea8c8c;
+}
+.notice_list
+{
+    background: #fdf7e0 url('../images/sf_guard/notice_bg.png') bottom left repeat-x;
+    color: #e8c63c;
+}
+#sf_admin_container fieldset h2
+{
+    background-color: #8cb9d3;
+}

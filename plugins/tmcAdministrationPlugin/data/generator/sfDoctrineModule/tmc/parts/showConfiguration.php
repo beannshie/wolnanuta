@@ -20,8 +20,12 @@
 
     foreach (array_keys($config['default']) as $field)
     {
-      $formConfig = array_merge($config['default'][$field], $config['form'][$field]);
-      $this->configuration['show']['fields'][$field]   = new sfModelGeneratorConfigurationField($field, array_merge(array('label' => sfInflector::humanize(sfInflector::underscore($field))), $config['default'][$field], $config['show'][$field]));
+// MY - rzucalo notice'ami, zmienione ponizsze 2 linie
+      $formConfig = array_merge($config['default'][$field], isset($config['form'][$field]) ? $config['form'][$field] : array());
+      $this->configuration['show']['fields'][$field]   = new sfModelGeneratorConfigurationField($field, array_merge(array('label' => sfInflector::humanize(sfInflector::underscore($field))), $config['default'][$field], isset($config['show'][$field]) ? $config['show'][$field] : array()));
+      //$formConfig = array_merge($config['default'][$field], $config['form'][$field]);
+      //$this->configuration['show']['fields'][$field]   = new sfModelGeneratorConfigurationField($field, array_merge(array('label' => sfInflector::humanize(sfInflector::underscore($field))), $config['default'][$field], $config['show'][$field]));
+// END MY
     }
    
     // virtual show fields

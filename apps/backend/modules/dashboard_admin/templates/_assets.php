@@ -6,3 +6,6 @@
 <?php use_stylesheet('/tmcAdministrationPlugin/css/jquery/jquery-ui-1.8.6.custom.css') ?>
 
 <?php use_stylesheet('/tmcAdministrationPlugin/css/compressed.css') ?>
+
+<?php //dodana przeze mnie ?>
+<?php use_stylesheet('/css/darkblue.css') ?>

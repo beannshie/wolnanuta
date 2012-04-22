@@ -2,6 +2,12 @@ w plikach app.yml oraz factories.yml ustawic odpowiednie dane(maile etc.):
 
 wprowadzic odpowiednie dane w config/databases.yml
 
+sprawdzic czy dziala (laduje sie) recaptcha (key)
+
+sprawdzic czy wysylaja sie maile
+
+sprawdzic czy dzialaja taski cronowe
+
 
 
 CRON:
